@@ -1,0 +1,34 @@
+{
+  "name": "pocket-allowance-wallet-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Static frontend for the Pocket (PCKT) AllowanceWallet on Sepolia.",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc -p tsconfig.json",
+    "build": "vite build && node scripts/manifest.mjs",
+    "manifest": "node scripts/manifest.mjs",
+    "preview": "vite preview --outDir ../dist",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm run test && npm run build"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "viem": "^2.56.9"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.7",
+    "@types/node": "^24.19.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "jsdom": "^30.1.1",
+    "typescript": "~5.9.3",
+    "vite": "^8.3.1",
+    "vitest": "^5.0.2"
+  }
+}
